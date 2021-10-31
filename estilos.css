@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 10px;
+   
+    box-sizing:border-box;
+}
+.padre{
+display: flex;
+flex-flow: column nowrap ;
+}
+ 
+       .header{
+        background: url(paisajeprincipal1.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover; 
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: space-between; 
+        
+     } 
+
+     .header2{
+        background: url(Paisajeprincipal.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: space-between; 
+        
+    }   
+    
+     .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: baseline;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1em;
+        }
+        
+
+         .nav{
+             flex: 5 1 auto; 
+             cursor:pointer;
+             width: 95%; 
+             opacity: 0.7;
+             background-color: rgb(213, 241, 213);
+            }
+        .nav2{
+            flex: 5 1 auto;
+            cursor:pointer;
+            background-color: rgb(213, 241, 213);
+            opacity: 0.7;
+            width: 95%; 
+        } 
+
+         .nav a{
+            color: rgb(25, 6, 109);
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            padding: 0 10px;
+      
+        
+        }
+        
+        .nav2 a{
+
+            color:steelblue;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            padding: 0 10px;
+            
+        }
+
+       .logo{
+        height:50vh;
+        width:240vw;
+        flex:1 1 auto; 
+        }
+        
+        .texto_principal {
+        
+        height: 50vh;  
+        text-align: center;
+        font-family: 'Courgette', cursive;
+        color: #FFFF1A;
+        animation-name: changeColor;
+        animation-duration: 8s;
+        transition-timing-function:easy-ease-in;
+        animation-iteration-count: infinite;
+     }
+     @keyframes changeColor{
+         
+         0% {color:#FFFF1A;}
+         25% {color:rgba 170, 246, 38, 0.62;}
+         50% {color:rgba rgba 6, 190, 77, 0.62;}
+         75% {color:green;}
+         100%{color:rgba 212, 243, 142, 0.8;}
+         
+     }
+
+     .texto_principal h1{
+         font-size: 7em;
+     }
+
+     .section{
+         display: flex;
+    }
+
+        .articulos{
+          
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            background-color:rgb(246, 252, 241);
+           
+        }
+           .articulo{
+               flex: 1 1 40%;
+               color: grey;
+               font-size: 3em;
+               flex: 1 1 45%;
+              
+           } 
+           h2{
+            font-size: 2em;
+            letter-spacing:0vw;
+            font-family: 'Roboto', sans-serif;
+            padding: 0px, 0px 0;
+            margin-top: -1em;
+           }
+            .articulo img{
+                width: 100%;
+                
+            }
+            
+            .articulo a{
+                color: rgb(3, 53, 18);
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.2em; 
+                padding: 1em;
+                background: rgb(147, 228, 190);
+                margin: 1em;
+                display: block;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .articulo a:hover{
+            background:rgba(19, 248, 237, 0.38)
+            }
+        
+        .aside{
+        background: rgb(133, 133, 127);
+        flex: -0,5 0 auto;
+        margin: 10 px 5 px 10 px 0;
+        }
+
+        h4{
+            background: #000;
+            color: #fff;
+            padding: 1em;
+            text-transform: uppercase;
+           
+        }
+
+        .clima{
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+             
+        }
+        .mapa{
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            }
+        .mapa iframe{
+                width: 80%;
+            }   
+        
+        .public{ 
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            }
+        .public img
+        {
+        width: 100%;
+        } 
+        
+        
+    
+     .footer{
+        background:#343142;
+        display:flex;
+        flex-wrap: nowrap;
+        align-content: center; 
+        align-content: space-between;
+    
+        
+     }
+      
+      .logo{
+            margin: auto;
+            flex: 1 1 30%; 
+        }
+
+      .social{
+        flex: 1 1 30%;
+        display:flex;
+        align-content: space-between;
+        height:10vh;
+        align-items: center;
+        margin-top: 4em;
+       }
+    
+       .social a{
+        margin:0;
+        padding: .1em;
+        width: 3vw;
+        height: 3vw;
+        text-align: center;
+        color: white;
+        font-size: 3em;
+        margin: auto;
+        justify-content: center;
+        
+    }
+    
+    .social a :hover{
+        color:rgb(77, 186, 236);
+        filter: blur(2px);
+    }
+    .contact {
+        align-content:right;
+
+       
+    }
+    
+    .section{
+        background-color: bisque;
+        display:flex;
+        padding:0px;
+    }
+    .container-all{
+        display:inline-block;
+        flex: 2 1 auto;
+        width:100%;
+        padding:1em;
+        
+        margin-left: 0%;
+        
+    }
+    
+    .container-all img{
+        display: flex;
+        width: 40vw;
+        float:left;
+        margin: right 0px;
+        
+    }
+    .container-all p{
+        font-size: 1.2em;
+        font-weight: 300;
+        margin:0px;
+    }
+    .container-all h2{
+        margin-bottom: 0%;
+    }
+    .container-all a{
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    @media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        
+    }
+ 
+@media all and (max-width: 600px){
+    
+    .articulos{
+        flex-direction: column;}
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+@media all and (min-width: 400px){
+
+    
+    }
+    .menu{
+        display:flex;
+        font-size: small;
+        flex-direction: column;
+        align-items: center;
+    }
+     .nav-bar{
+        display:flex;
+        flex-direction: column; 
+    }
+    
+    .texto_principal h1{ 
+        font-size:3em;
+        text-align: center;
+    } 
+    
+    .articulos{
+        display: flex;
+        align-content: center;
+    }
+    .articulo{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside{
+        display: flex;
+        flex-direction: column;
+   }
+   .container-all{
+       display:inline-block;
+   }
+   .container-all img{
+       size: 100%;
+   }
+    .container-all p{
+        font-size:small;
+        margin:0px;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social{
+        display:flex;
+        align-content:center;
+        flex-wrap: nowrap;
+        font-size: 50%;
+    }
+        .social a{
+           
+            display:flex;
+            text-decoration: none;
+            align-items: center;
+            }
+        .contact{
+        justify-content: center;
+        }
+    }
+        
+

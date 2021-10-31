@@ -1,0 +1,23 @@
+body{
+    margin-left: 2em;
+    background-color: beige;
+}
+ form{
+    display: inline-table;
+    border-radius: .5%;
+    
+    
+    
+   }
+
+h1{   
+        flex:auto;
+        text-align: left;
+        color: blue;
+        font-size: 35px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 1em;
+    }
+    
+    
+   
